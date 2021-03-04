@@ -75,7 +75,7 @@ function preload() {
   beginnerAssets[4] = loadImage('assets/pothos.png');
   beginnerAssets[5] = loadImage('assets/pothosbodytext.png');
   beginnerAssets[6] = loadImage('assets/buymacrame.png');
-  beginnerAssets[7] = loadImage('assets/gotointermediate.png');
+  beginnerAssets[7] = loadImage('assets/gotomainpage.png');
 
   
   //intermediate images
@@ -86,7 +86,7 @@ function preload() {
   intermediateAssets[4] = loadImage('assets/africanmask.png');
   intermediateAssets[5] = loadImage('assets/africanmaskbodytext.png');
   intermediateAssets[6] = loadImage('assets/buysoil.png');
-  intermediateAssets[7] = loadImage('assets/gotoadvanced.png');
+  intermediateAssets[7] = loadImage('assets/gotomainpage.png');
   
   //advanced images
   advancedAssets[0] = loadImage('assets/advancedtitle.png');
@@ -255,6 +255,9 @@ function keyPressed() {
     }
       if( key === 'a' ) {
       drawFunction = drawAdvanced;
+    }
+      if( key === 'm' ) {
+      drawFunction = drawMainpage;
     }
       else if( key === 'b' ) {
       drawFunction = drawBeginner;
