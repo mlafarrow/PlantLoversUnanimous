@@ -12,9 +12,6 @@
 // variable that is a function 
 var drawFunction;
 
-// rounded corner variable
-var crnr = 4;
-
 //array variables
 var mainPageAssets = [];
 var beginnerAssets = [];
@@ -68,46 +65,46 @@ function preload() {
   mainPageAssets[1] = loadImage('assets/mainpage2.png');
 
  //beginner images
-  beginnerAssets[0] = loadImage('assets/beginnertitle.png');
-  beginnerAssets[1] = loadImage('assets/cactus.png');
-  beginnerAssets[2] = loadImage('assets/cactusbodytext.png');
-  beginnerAssets[3] = loadImage('assets/buysoil.png');
-  beginnerAssets[4] = loadImage('assets/pothos.png');
-  beginnerAssets[5] = loadImage('assets/pothosbodytext.png');
-  beginnerAssets[6] = loadImage('assets/buymacrame.png');
-  beginnerAssets[7] = loadImage('assets/gotomainpage.png');
+  beginnerAssets[0] = loadImage('assets/beginnertitle.png'); //title
+  beginnerAssets[1] = loadImage('assets/cactus.png'); //cactus illustration
+  beginnerAssets[2] = loadImage('assets/cactusbodytext.png'); //cactus body text
+  beginnerAssets[3] = loadImage('assets/buymister.png'); //suggestion mister button
+  beginnerAssets[4] = loadImage('assets/pothos.png'); //pothos illustration
+  beginnerAssets[5] = loadImage('assets/pothosbodytext.png'); //pothos body text
+  beginnerAssets[6] = loadImage('assets/buymacrame.png'); // suggestion macrame button
+  beginnerAssets[7] = loadImage('assets/gotomainpage.png'); //main page button
 
   
   //intermediate images
-  intermediateAssets[0] = loadImage('assets/intermediatetitle.png');
-  intermediateAssets[1] = loadImage('assets/monstera.png');
-  intermediateAssets[2] = loadImage('assets/monsterabodytext.png');
-  intermediateAssets[3] = loadImage('assets/buysoil.png');
-  intermediateAssets[4] = loadImage('assets/africanmask.png');
-  intermediateAssets[5] = loadImage('assets/africanmaskbodytext.png');
-  intermediateAssets[6] = loadImage('assets/buysoil.png');
-  intermediateAssets[7] = loadImage('assets/gotomainpage.png');
+  intermediateAssets[0] = loadImage('assets/intermediatetitle.png'); //title
+  intermediateAssets[1] = loadImage('assets/monstera.png'); //monstera illustration
+  intermediateAssets[2] = loadImage('assets/monsterabodytext.png'); //monstera body text
+  intermediateAssets[3] = loadImage('assets/buyhumidifier.png'); //humidifier button
+  intermediateAssets[4] = loadImage('assets/africanmask.png'); //african mask plant
+  intermediateAssets[5] = loadImage('assets/africanmaskbodytext.png'); //african mask body text
+  intermediateAssets[6] = loadImage('assets/buyperlite.png'); //perlite button
+  intermediateAssets[7] = loadImage('assets/gotomainpage.png'); //main page button
   
   //advanced images
-  advancedAssets[0] = loadImage('assets/advancedtitle.png');
-  advancedAssets[1] = loadImage('assets/calathea.png');
-  advancedAssets[2] = loadImage('assets/calatheabodytext.png');
-  advancedAssets[3] = loadImage('assets/buymacrame.png');
-  advancedAssets[4] = loadImage('assets/fiddleleaf.png');
-  advancedAssets[5] = loadImage('assets/fiddleleafbodytext.png');
-  advancedAssets[6] = loadImage('assets/buymacrame.png');
-  advancedAssets[7] = loadImage('assets/gotomainpage.png');
+  advancedAssets[0] = loadImage('assets/advancedtitle.png'); //title
+  advancedAssets[1] = loadImage('assets/calathea.png'); //calathea illustration
+  advancedAssets[2] = loadImage('assets/calatheabodytext.png'); //calathea body text
+  advancedAssets[3] = loadImage('assets/buymister.png'); //mister button
+  advancedAssets[4] = loadImage('assets/fiddleleaf.png'); //fiddle leaf illustration
+  advancedAssets[5] = loadImage('assets/fiddleleafbodytext.png'); //fiddle leaf body text
+  advancedAssets[6] = loadImage('assets/buyhumidifier.png'); //humidifier button
+  advancedAssets[7] = loadImage('assets/gotomainpage.png'); //main page button
 
   //things to buy images
-  thingstobuyAssets[0] = loadImage('assets/thingstobuytitle.png');
-  thingstobuyAssets[1] = loadImage('assets/macrame.png');
-  thingstobuyAssets[2] = loadImage('assets/humidifier.png');
-  thingstobuyAssets[3] = loadImage('assets/perlite.png');
-  thingstobuyAssets[4] = loadImage('assets/spritzer.png');
-  thingstobuyAssets[5] = loadImage('assets/macrametext.png');
-  thingstobuyAssets[6] = loadImage('assets/humidifiertext.png');
-  thingstobuyAssets[7] = loadImage('assets/perlitetext.png');
-  thingstobuyAssets[8] = loadImage('assets/spritzertext.png');
+  thingstobuyAssets[0] = loadImage('assets/thingstobuytitle.png'); //title
+  thingstobuyAssets[1] = loadImage('assets/macrame.png'); //macrame image
+  thingstobuyAssets[2] = loadImage('assets/humidifier.png'); //humidifier image
+  thingstobuyAssets[3] = loadImage('assets/perlite.png'); //perlite image
+  thingstobuyAssets[4] = loadImage('assets/spritzer.png'); //mister image
+  thingstobuyAssets[5] = loadImage('assets/macrametext.png'); //macrame text
+  thingstobuyAssets[6] = loadImage('assets/humidifiertext.png'); //humidifier text
+  thingstobuyAssets[7] = loadImage('assets/perlitetext.png'); //perlite text
+  thingstobuyAssets[8] = loadImage('assets/spritzertext.png'); //mister text
 
 }
 
@@ -149,7 +146,7 @@ drawMainpage = function() {
 //draws images from beginnerAssets array
 drawBeginner = function() {
 
-  background(255, 232, 182);  
+  background(239, 237, 180);  
   imageMode(CORNER);
    //images in array
    image(beginnerAssets[0], maintitleX, maintitleY);  //subtitle
@@ -160,24 +157,11 @@ drawBeginner = function() {
    image(beginnerAssets[5], text2X, text2Y);  //paragraph 2
    image(beginnerAssets[6], button2X, button2Y); //suggestion button
    image(beginnerAssets[7], button2X, nextY); //next page button
-
-   //Create clickable object
-   //cactibutton = new Clickable();
-
-   //set image to this png
-   //cactibutton.image = beginnerAssets[3];
-
-   //button background
-   //cactibutton.color = "#FFFFFF";
-
-   // set button width and height to image size
-   //cactibutton.width = beginnerAssets[3].width;
-   //cactibutton.height = beginnerAssets[3].height;
 }
 
 //draws images from intermediateAssets array
 drawIntermediate = function() {
- background(255, 232, 182); 
+ background(239, 237, 180); 
 
    //images in array
    image(intermediateAssets[0], maintitleX, maintitleY);  //subtitle
@@ -192,7 +176,7 @@ drawIntermediate = function() {
 
 //draws images from advancedAssets array
 drawAdvanced = function() {
- background(255, 232, 182);  
+ background(239, 237, 180); 
 
    //images in array
    image(advancedAssets[0], maintitleX, maintitleY);  //subtitle
@@ -207,7 +191,7 @@ drawAdvanced = function() {
 
 //draws images from thingstobuyArray
 drawThingstobuy = function() {
-   background(255, 232, 182); 
+   background(239, 237, 180);
 
    //images in array
    image(thingstobuyAssets[0], maintitleX, maintitleY);  //subtitle
