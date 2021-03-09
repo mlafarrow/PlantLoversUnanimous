@@ -3,8 +3,8 @@
           (*)by Emily Farrow
 
     (*)Overview - Website created to give tips on plant care based on expertise and skill level. 
-    There are 5 pages, the first being the main page, second through fourth being the different skill level pages,
-    and the last being the 'Things to buy' page.
+    There are 14 pages: a main page, beginner, intermediate, advanced, all 6 of the specific plant types,
+     and then four recommended things to buy pages. 
  
 **************************************************************************/
 
